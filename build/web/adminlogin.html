@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Admin Login</title>
+    <link rel="icon" href="download.png" >
+
+</head>
+<body>
+    <h1>Admin Login</h1>
+    <form action="adminLoginServlet" method="post">
+        <label for="admin_id">Admin ID:</label>
+        <input type="text" id="admin_id" name="admin_id" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+    <style>
+        body{
+            margin: 0;
+            background-image: url('f1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+
+        }
+
+        h1 {
+            color: khaki;
+            background-color: indigo;
+            text-align: center;
+            padding:10px;
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        form {
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 500px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            
+        }
+
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #555;
+        }
+
+        input[type="submit"] {
+            background-color: indigo;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #993399;
+        }
+
+    </style>
+</html>
